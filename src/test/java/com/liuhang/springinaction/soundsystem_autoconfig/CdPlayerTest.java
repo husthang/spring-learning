@@ -1,4 +1,4 @@
-package com.liuhang.springinaction.soundsystem;
+package com.liuhang.springinaction.soundsystem_autoconfig;
 
 import static org.junit.Assert.*;
 

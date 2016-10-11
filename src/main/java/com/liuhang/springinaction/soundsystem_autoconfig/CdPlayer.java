@@ -1,4 +1,4 @@
-package com.liuhang.springinaction.soundsystem;
+package com.liuhang.springinaction.soundsystem_autoconfig;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
