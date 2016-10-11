@@ -9,5 +9,5 @@ public interface Knight {
   /**
    * 骑士 执行探险quest
    */
-  public void embarkOnQuest();
+  void embarkOnQuest();
 }
