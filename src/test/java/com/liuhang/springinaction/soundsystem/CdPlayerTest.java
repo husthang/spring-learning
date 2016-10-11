@@ -17,6 +17,9 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = CdPlayerConfig.class)
 public class CdPlayerTest {
+    /**
+     * Rule注解，Junit规则 SystemOUtRule 代替StandarOutputStreamLog(不被推荐)
+     */
     @Rule
     public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
     @Autowired
