@@ -8,10 +8,10 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class CdPlayer implements MediaPlayer {
-    private CompacDisc cd;
+    private CompactDisc cd;
 
     @Autowired
-    public CdPlayer(CompacDisc cd) {
+    public CdPlayer(CompactDisc cd) {
         this.cd = cd;
     }
 
@@ -20,7 +20,7 @@ public class CdPlayer implements MediaPlayer {
     }
 
     @Autowired
-    public void setCd(CompacDisc cd) {
+    public void setCd(CompactDisc cd) {
         this.cd = cd;
     }
 }

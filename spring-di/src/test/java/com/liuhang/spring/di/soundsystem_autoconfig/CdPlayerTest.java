@@ -22,7 +22,7 @@ public class CdPlayerTest {
     @Rule
     public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
     @Autowired
-    private CompacDisc cd;
+    private CompactDisc cd;
     @Autowired
     private MediaPlayer player;
 
