@@ -30,7 +30,7 @@ public class AutoConfigTest {
 
     @Test
     public void cdShouldNotBeNull() {
-//        Assert.assertNotNull(compactDisc);
+        Assert.assertNotNull(compactDisc);
     }
 
     @Test
