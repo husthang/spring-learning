@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="media" class="stereo.xmlconfig.SgtPeppers"></bean>
+    <bean id="cdPlayer" class="stereo.xmlconfig.CDPlayer" c:_0-ref="media"></bean>
+</beans>
