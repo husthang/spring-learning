@@ -3,7 +3,7 @@ package stereo.javaconfig;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import stereo.entity.CompactDisc;
+import stereo.entity.Media;
 import stereo.entity.MediaPlayer;
 
 /**
@@ -12,12 +12,12 @@ import stereo.entity.MediaPlayer;
 @Configuration
 public class Config {
     @Bean
-    public CompactDisc getCompactDisc() {
+    public Media getCompactDisc() {
         return new SgtPeppers();
     }
 
     @Bean
-    public MediaPlayer getMediaPlayer(CompactDisc compactDisc) {
-        return new CDPlayer(compactDisc);
+    public MediaPlayer getMediaPlayer(Media media) {
+        return new CDPlayer(media);
     }
 }

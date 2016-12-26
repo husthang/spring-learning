@@ -1,6 +1,6 @@
 package stereo.javaconfig;
 
-import stereo.entity.CompactDisc;
+import stereo.entity.Media;
 import stereo.entity.MediaPlayer;
 
 /**
@@ -8,14 +8,14 @@ import stereo.entity.MediaPlayer;
  * 具体的播放器-Cd播放器,实现播放器接口
  */
 public class CDPlayer implements MediaPlayer {
-    private CompactDisc compactDisc;
+    private Media media;
 
-    public CDPlayer(CompactDisc compactDisc) {
-        this.compactDisc = compactDisc;
+    public CDPlayer(Media media) {
+        this.media = media;
     }
 
     @Override
     public void play() {
-        compactDisc.play();
+        media.play();
     }
 }

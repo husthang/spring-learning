@@ -2,7 +2,7 @@ package stereo.autoconfig;
 
 import org.springframework.stereotype.Component;
 
-import stereo.entity.CompactDisc;
+import stereo.entity.Media;
 import stereo.entity.MediaPlayer;
 
 /**
@@ -11,14 +11,14 @@ import stereo.entity.MediaPlayer;
  */
 @Component
 public class CDPlayer implements MediaPlayer {
-    private CompactDisc compactDisc;
+    private Media media;
 
-    public CDPlayer(CompactDisc compactDisc) {
-        this.compactDisc = compactDisc;
+    public CDPlayer(Media media) {
+        this.media = media;
     }
 
     @Override
     public void play() {
-        compactDisc.play();
+        media.play();
     }
 }

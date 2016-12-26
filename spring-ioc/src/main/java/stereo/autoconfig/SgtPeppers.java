@@ -2,14 +2,14 @@ package stereo.autoconfig;
 
 import org.springframework.stereotype.Component;
 
-import stereo.entity.CompactDisc;
+import stereo.entity.Media;
 
 /**
  * Created by liuhang on 2016/12/23.
  * 实现CD接口,具体的CD: SgtPeppers
  */
 @Component
-public class SgtPeppers implements CompactDisc {
+public class SgtPeppers implements Media {
 
     private String title = "Sgt. Pepper's Lonely Hearts Club Band";
     private String artist = "The Beatles";

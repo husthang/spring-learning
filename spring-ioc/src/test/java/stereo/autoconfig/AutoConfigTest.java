@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import stereo.entity.CompactDisc;
+import stereo.entity.Media;
 import stereo.entity.MediaPlayer;
 
 /**
@@ -23,14 +23,14 @@ public class AutoConfigTest {
     public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
 
     @Autowired
-    private CompactDisc compactDisc;
+    private Media media;
 
     @Autowired
     private MediaPlayer mediaPlayer;
 
     @Test
     public void cdShouldNotBeNull() {
-        Assert.assertNotNull(compactDisc);
+        Assert.assertNotNull(media);
     }
 
     @Test
