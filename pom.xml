@@ -13,7 +13,7 @@
 
     <properties>
         <junit.version>4.12</junit.version>
-        <spring.version>4.3.0.RELEASE</spring.version>
+        <spring.version>4.3.4.RELEASE</spring.version>
         <system-rules.version>1.16.1</system-rules.version>
     </properties>
 
@@ -31,6 +31,7 @@
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
                 <version>${junit.version}</version>
+                <scope>test</scope>
             </dependency>
             <!--System Rules-->
             <dependency>
@@ -56,6 +57,13 @@
                 <artifactId>spring-test</artifactId>
                 <version>${spring.version}</version>
             </dependency>
+            <!--spring core,包含cglib-->
+            <!--<dependency>-->
+            <!--<groupId>org.springframework</groupId>-->
+            <!--<artifactId>spring-core</artifactId>-->
+            <!--<version>${spring.version}}</version>-->
+            <!--</dependency>-->
+
         </dependencies>
     </dependencyManagement>
 
