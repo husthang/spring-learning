@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<beans>
+    <bean id="user" class="ioc.User"/>
+    <bean id="userService" class="ioc.UserService">
+        <property name="user" ref="user"/>
+    </bean>
+</beans>
